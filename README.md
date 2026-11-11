@@ -27,11 +27,16 @@ Builds are published on the [Releases](https://github.com/evawevawevaw/thaumic-a
 
 ## Differences from the original
 
-Granum = Herba + Victus
-
-Old RF/RJ systems have been replaced by NeoForge Energy. Fractional energy remainders are now preserved instead of being lost.
-
-fixed the bugs
+Granum is now crafted from Herba + Victus.
+Energy generation rebalanced to 60 FE/tick. The condenser burns one crystal per 600 working ticks, down from 24,000.
+Energy system: NeoForge Energy replaces the old RF/RJ.
+Cisterns: added new recipes following your layout. The original registrations had none. The reinforced cistern takes a regular cistern in the center.
+Filler books now show recipes. In the original, the book’s GUI was empty.
+Hypernode Maker: all 36 slots are usable, not just the 27 that were displayed.
+Seals: the two-symbol tilling seal, previously unreachable, now works. Added protected-area checks.
+Teleportation goes straight between dimensions instead of building and removing a temporary obsidian frame.
+GUIs are modernized, with EMI/JEI/REI integration.
+The old bugs that lost, duplicated, or drove resource stocks negative were deliberately not reproduced.
 
 ## Building
 
