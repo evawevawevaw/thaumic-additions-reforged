@@ -1,5 +1,3 @@
-<p align="center"><img src="thaumic-additions-icon.jpeg" width="500" alt="Thaumic Additions"></p>
-
 # Thaumic Additions: port to Minecraft 1.21.1
 
 Unofficial port of Thaumic Additions by Zeith from Minecraft 1.7.10 to Minecraft 1.21.1 on NeoForge. It is an addon for [Thaumcraft 4 Reforged](https://github.com/notlikethiss/thaumcraft-4-reforged).
