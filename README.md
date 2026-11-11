@@ -25,6 +25,14 @@ Versions used for the build:
 
 Builds are published on the [Releases](https://github.com/evawevawevaw/thaumic-additions-reforged/releases) page. The mod version comes from `mod_version` in `gradle.properties`.
 
+## Differences from the original
+
+Granum = Herba + Victus
+
+Old RF/RJ systems have been replaced by NeoForge Energy. Fractional energy remainders are now preserved instead of being lost.
+
+fixed the bugs
+
 ## Building
 
 Thaumcraft 4 Reforged is not bundled. Download its jar from the [release page](https://github.com/notlikethiss/thaumcraft-4-reforged/releases/tag/1.21.1), put it into `libs/` as `thaumcraft-4-reforged-1.1.3-1.21.1.jar` and run:
