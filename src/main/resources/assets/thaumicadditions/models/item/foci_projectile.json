@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "thaumicadditions:item/foci/foci_projectile_orn",
+        "layer1": "thaumicadditions:item/foci/foci_projectile"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "dig.glasswood": {
+        "sounds": [
+            "thaumicadditions:dig/glasswood1",
+            "thaumicadditions:dig/glasswood2",
+            "thaumicadditions:dig/glasswood3",
+            "thaumicadditions:dig/glasswood4"
+        ]
+    },
+    "step.glasswood": {
+        "sounds": [
+            "thaumicadditions:step/glasswood1",
+            "thaumicadditions:step/glasswood2",
+            "thaumicadditions:step/glasswood3",
+            "thaumicadditions:step/glasswood4",
+            "thaumicadditions:step/glasswood5",
+            "thaumicadditions:step/glasswood6"
+        ]
+    },
+    "singularity": {
+        "sounds": [
+            "thaumicadditions:singularity"
+        ]
+    },
+    "seal_symbol_set": {
+        "sounds": [
+            "thaumicadditions:seal_symbol_set"
+        ]
+    },
+    "infuser": {
+        "sounds": [
+            "thaumicadditions:infuser"
+        ]
+    },
+    "voidchestopen": {
+        "sounds": [
+            "thaumicadditions:voidopen"
+        ]
+    },
+    "voidchestclose": {
+        "sounds": [
+            "thaumicadditions:voidclose"
+        ]
+    },
+    "portalopen": {
+        "sounds": [
+            "thaumicadditions:popen"
+        ]
+    },
+    "portalclose": {
+        "sounds": [
+            "thaumicadditions:pclose"
+        ]
+    },
+    "tinkering": {
+        "sounds": [
+            "thaumicadditions:tinkering"
+        ]
+    },
+    "bubbling": {
+        "sounds": [
+            "thaumicadditions:bubbling"
+        ]
+    },
+    "hallelujah": {
+        "sounds": [
+            "thaumicadditions:hallelujah"
+        ]
+    }
+}

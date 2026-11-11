@@ -1,0 +1,26 @@
+{
+    "parent": "thaumicadditions:greatwoodwand",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:wand",
+            "components": {
+                "thaumcraft:wand_parts": {
+                    "rod": "silverwood",
+                    "cap": "thaumium"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.silverwoodwand"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.silverwoodwand.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

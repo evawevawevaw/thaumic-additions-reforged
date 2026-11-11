@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "has_jar=false": {
+            "model": "thaumicadditions:block/symboller_base"
+        },
+        "has_jar=true": {
+            "model": "thaumicadditions:block/symboller"
+        }
+    }
+}

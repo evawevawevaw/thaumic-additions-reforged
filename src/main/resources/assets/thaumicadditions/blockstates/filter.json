@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "thaumicadditions:block/filter"
+        },
+        "axis=x": {
+            "model": "thaumicadditions:block/filter",
+            "x": 90,
+            "y": 90
+        },
+        "axis=z": {
+            "model": "thaumicadditions:block/filter",
+            "x": 90
+        }
+    }
+}

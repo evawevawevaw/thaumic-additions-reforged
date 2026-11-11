@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "thaumicadditions:block/tile_booster"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "thaumicadditions:block/infuser_base",
+    "textures": {
+        "north": "thaumicadditions:block/infuser/side_2",
+        "south": "thaumicadditions:block/infuser/side",
+        "east": "thaumicadditions:block/infuser/side_2",
+        "west": "thaumicadditions:block/infuser/side"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:silverwoodwand",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:primordial_pearl"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.primalpearl"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.primalpearl.desc"
+        },
+        "frame": "challenge"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

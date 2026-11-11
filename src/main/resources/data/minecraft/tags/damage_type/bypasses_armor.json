@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "thaumicadditions:invalid_relic_owner",
+        "thaumicadditions:relic_nonplayer",
+        "thaumicadditions:singularity",
+        "thaumicadditions:singularity_boss"
+    ]
+}

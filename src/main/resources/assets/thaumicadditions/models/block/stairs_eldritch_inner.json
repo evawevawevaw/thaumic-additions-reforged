@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/inner_stairs",
+    "textures": {
+        "bottom": "thaumicadditions:block/obelisc/eld_stone",
+        "top": "thaumicadditions:block/obelisc/eld_stone",
+        "side": "thaumicadditions:block/obelisc/eld_stone"
+    }
+}

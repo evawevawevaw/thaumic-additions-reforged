@@ -1,0 +1,9 @@
+{
+    "parent": "thaumicadditions:block/dark_infuser_base",
+    "textures": {
+        "north": "thaumicadditions:block/dark_infuser/side_2",
+        "south": "thaumicadditions:block/dark_infuser/side_2",
+        "east": "thaumicadditions:block/dark_infuser/side",
+        "west": "thaumicadditions:block/dark_infuser/side_2"
+    }
+}

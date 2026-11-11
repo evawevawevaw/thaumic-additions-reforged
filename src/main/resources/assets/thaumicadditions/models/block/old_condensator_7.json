@@ -1,0 +1,82 @@
+{
+    "parent": "minecraft:block/block",
+    "textures": {
+        "particle": "thaumicadditions:block/condensator/side",
+        "down": "thaumicadditions:block/condensator/bottom",
+        "up": "thaumicadditions:block/condensator/top",
+        "north": "thaumicadditions:block/condensator/side_2",
+        "south": "thaumicadditions:block/condensator/side_2",
+        "east": "thaumicadditions:block/condensator/side_2",
+        "west": "thaumicadditions:block/condensator/side"
+    },
+    "elements": [
+        {
+            "from": [
+                2,
+                0,
+                2
+            ],
+            "to": [
+                14,
+                16,
+                14
+            ],
+            "faces": {
+                "up": {
+                    "texture": "#up",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "down": {
+                    "texture": "#down",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "north": {
+                    "texture": "#north",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "south": {
+                    "texture": "#south",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "east": {
+                    "texture": "#east",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "west": {
+                    "texture": "#west",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                }
+            }
+        }
+    ]
+}

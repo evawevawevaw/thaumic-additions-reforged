@@ -1,0 +1,26 @@
+{
+    "parent": "thaumicadditions:root",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:wand",
+            "components": {
+                "thaumcraft:wand_parts": {
+                    "rod": "wood",
+                    "cap": "iron"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.basicwand"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.basicwand.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

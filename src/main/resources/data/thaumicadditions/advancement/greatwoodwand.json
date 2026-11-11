@@ -1,0 +1,26 @@
+{
+    "parent": "thaumicadditions:basicwand",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:wand",
+            "components": {
+                "thaumcraft:wand_parts": {
+                    "rod": "greatwood",
+                    "cap": "gold"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.greatwoodwand"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.greatwoodwand.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

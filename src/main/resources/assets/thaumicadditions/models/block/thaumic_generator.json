@@ -1,0 +1,78 @@
+{
+    "parent": "minecraft:block/block",
+    "render_type": "minecraft:translucent",
+    "textures": {
+        "glass": "thaumicadditions:block/glass",
+        "particle": "thaumicadditions:block/glass"
+    },
+    "elements": [
+        {
+            "from": [
+                2,
+                2,
+                2
+            ],
+            "to": [
+                14,
+                14,
+                14
+            ],
+            "faces": {
+                "up": {
+                    "texture": "#glass",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "down": {
+                    "texture": "#glass",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "north": {
+                    "texture": "#glass",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "south": {
+                    "texture": "#glass",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "east": {
+                    "texture": "#glass",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "west": {
+                    "texture": "#glass",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                }
+            }
+        }
+    ]
+}

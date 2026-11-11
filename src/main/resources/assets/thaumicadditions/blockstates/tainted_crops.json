@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "age=0": {
+            "model": "thaumicadditions:block/tainted_crops_0"
+        },
+        "age=1": {
+            "model": "thaumicadditions:block/tainted_crops_1"
+        },
+        "age=2": {
+            "model": "thaumicadditions:block/tainted_crops_2"
+        },
+        "age=3": {
+            "model": "thaumicadditions:block/tainted_crops_3"
+        },
+        "age=4": {
+            "model": "thaumicadditions:block/tainted_crops_3"
+        }
+    }
+}

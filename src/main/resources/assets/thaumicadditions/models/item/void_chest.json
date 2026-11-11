@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "side": "thaumicadditions:block/void_chest/side_item",
+        "top": "thaumicadditions:block/void_chest/top_common",
+        "bottom": "thaumicadditions:block/void_chest/bottom_common"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:alchemy",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:alumentum"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.alumentum"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.alumentum.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "thaumicadditions:tank_reinforced",
+        "thaumicadditions:old_crucible",
+        "thaumicadditions:infuser_activator",
+        "thaumicadditions:tile_booster"
+    ]
+}

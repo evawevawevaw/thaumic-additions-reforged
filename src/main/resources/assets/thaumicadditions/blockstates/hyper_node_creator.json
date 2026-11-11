@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "thaumicadditions:block/hyper_node_creator"
+        }
+    }
+}

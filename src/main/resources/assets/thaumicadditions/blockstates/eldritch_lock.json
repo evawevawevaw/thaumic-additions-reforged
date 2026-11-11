@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "wall=false": {
+            "model": "thaumicadditions:block/eldritch_lock"
+        },
+        "wall=true": {
+            "model": "thaumicadditions:block/eldritch_lock_wall"
+        }
+    }
+}

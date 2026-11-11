@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:thaumium",
+    "display": {
+        "icon": {
+            "id": "thaumicadditions:arcane_transporter"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.arcane_transporter"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.arcane_transporter.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

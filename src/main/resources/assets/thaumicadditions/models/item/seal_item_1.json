@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "thaumicadditions:item/seal_base",
+        "layer1": "thaumicadditions:item/seal_over",
+        "layer2": "thaumicadditions:item/seal_/s_0"
+    }
+}

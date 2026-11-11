@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:root",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:scribing_tools"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.research"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.research.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

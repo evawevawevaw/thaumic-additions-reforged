@@ -1,0 +1,227 @@
+{
+    "parent": "minecraft:block/block",
+    "textures": {
+        "particle": "thaumicadditions:block/dark_generator_side",
+        "top": "thaumicadditions:block/dark_generator_bottom_top",
+        "side": "thaumicadditions:block/dark_generator_side",
+        "model": "thaumicadditions:model/dark_generator"
+    },
+    "elements": [
+        {
+            "from": [
+                0,
+                0,
+                0
+            ],
+            "to": [
+                16,
+                7,
+                16
+            ],
+            "faces": {
+                "up": {
+                    "texture": "#top",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "down": {
+                    "texture": "#top",
+                    "uv": [
+                        0,
+                        0,
+                        16,
+                        16
+                    ]
+                },
+                "north": {
+                    "texture": "#side",
+                    "uv": [
+                        0,
+                        9,
+                        16,
+                        16
+                    ]
+                },
+                "south": {
+                    "texture": "#side",
+                    "uv": [
+                        0,
+                        9,
+                        16,
+                        16
+                    ]
+                },
+                "east": {
+                    "texture": "#side",
+                    "uv": [
+                        0,
+                        9,
+                        16,
+                        16
+                    ]
+                },
+                "west": {
+                    "texture": "#side",
+                    "uv": [
+                        0,
+                        9,
+                        16,
+                        16
+                    ]
+                }
+            }
+        },
+        {
+            "from": [
+                6.0,
+                7.0,
+                6.0
+            ],
+            "to": [
+                10.0,
+                8.0,
+                10.0
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0.0,
+                        7.5,
+                        0.5,
+                        7.75
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "north": {
+                    "uv": [
+                        0.5,
+                        7.5,
+                        1.0,
+                        7.75
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "west": {
+                    "uv": [
+                        1.0,
+                        7.5,
+                        1.5,
+                        7.75
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "south": {
+                    "uv": [
+                        1.5,
+                        7.5,
+                        2.0,
+                        7.75
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "down": {
+                    "uv": [
+                        0.5,
+                        6.5,
+                        1.0,
+                        7.5
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "up": {
+                    "uv": [
+                        1.0,
+                        6.5,
+                        1.5,
+                        7.5
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                }
+            }
+        },
+        {
+            "from": [
+                4.0,
+                8.0,
+                4.0
+            ],
+            "to": [
+                12.0,
+                16.0,
+                12.0
+            ],
+            "faces": {
+                "east": {
+                    "uv": [
+                        0.0,
+                        11.25,
+                        1.0,
+                        13.25
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "north": {
+                    "uv": [
+                        1.0,
+                        11.25,
+                        2.0,
+                        13.25
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "west": {
+                    "uv": [
+                        2.0,
+                        11.25,
+                        3.0,
+                        13.25
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "south": {
+                    "uv": [
+                        3.0,
+                        11.25,
+                        4.0,
+                        13.25
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "down": {
+                    "uv": [
+                        1.0,
+                        9.25,
+                        2.0,
+                        11.25
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                },
+                "up": {
+                    "uv": [
+                        2.0,
+                        9.25,
+                        3.0,
+                        11.25
+                    ],
+                    "texture": "#model",
+                    "rotation": 180
+                }
+            }
+        }
+    ]
+}

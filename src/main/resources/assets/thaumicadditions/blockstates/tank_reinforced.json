@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "top=false,bottom=false": {
+            "model": "thaumicadditions:block/tank_reinforced"
+        },
+        "top=false,bottom=true": {
+            "model": "thaumicadditions:block/tank_reinforced_bottom"
+        },
+        "top=true,bottom=false": {
+            "model": "thaumicadditions:block/tank_reinforced_top"
+        },
+        "top=true,bottom=true": {
+            "model": "thaumicadditions:block/tank_reinforced_connected"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "id": "thaumicadditions:adaminite_ingot"
+        },
+        "title": {
+            "translate": "itemGroup.thaumicadditions"
+        },
+        "description": {
+            "translate": "itemGroup.thaumicadditions"
+        },
+        "background": "minecraft:textures/block/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "thaumicadditions:block/thaumic_restorer"
+        }
+    }
+}

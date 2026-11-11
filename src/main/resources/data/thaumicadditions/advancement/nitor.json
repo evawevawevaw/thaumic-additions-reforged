@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:alchemy",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:nitor"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.nitor"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.nitor.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

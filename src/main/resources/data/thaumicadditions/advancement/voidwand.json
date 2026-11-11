@@ -1,0 +1,26 @@
+{
+    "parent": "thaumicadditions:silverwoodwand",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:wand",
+            "components": {
+                "thaumcraft:wand_parts": {
+                    "rod": "silverwood",
+                    "cap": "void"
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.voidwand"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.voidwand.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

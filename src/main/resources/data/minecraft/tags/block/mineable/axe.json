@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "thaumicadditions:tank_basic",
+        "thaumicadditions:vis_conduit",
+        "thaumicadditions:filter",
+        "thaumicadditions:thaumic_restorer"
+    ]
+}

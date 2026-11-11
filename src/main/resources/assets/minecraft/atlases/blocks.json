@@ -1,0 +1,44 @@
+{
+    "sources": [
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/aura_1"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/dark_generator"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/dark_infuser_corners"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/hyper_node_creator"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/infuser_activator"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/infuser_corners"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/old_crucible"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/thaumic_restorer"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/vis_tube"
+        },
+        {
+            "type": "minecraft:single",
+            "resource": "thaumicadditions:model/symboller"
+        }
+    ]
+}

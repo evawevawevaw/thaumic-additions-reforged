@@ -1,0 +1,41 @@
+{
+    "parent": "minecraft:block/block",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "particle": "thaumicadditions:block/tank/reinforced/side",
+        "side": "thaumicadditions:block/tank/reinforced/side_to_bottom",
+        "top": "thaumicadditions:block/tank/reinforced/top",
+        "bottom": "thaumicadditions:block/tank/reinforced/bottom"
+    },
+    "elements": [
+        {
+            "from": [
+                1,
+                0,
+                1
+            ],
+            "to": [
+                15,
+                16,
+                15
+            ],
+            "faces": {
+                "north": {
+                    "texture": "#side"
+                },
+                "south": {
+                    "texture": "#side"
+                },
+                "east": {
+                    "texture": "#side"
+                },
+                "west": {
+                    "texture": "#side"
+                },
+                "up": {
+                    "texture": "#top"
+                }
+            }
+        }
+    ]
+}

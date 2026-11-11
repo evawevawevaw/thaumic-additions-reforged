@@ -1,0 +1,127 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "AND": [
+                    {
+                        "OR": [
+                            {
+                                "down": "false"
+                            },
+                            {
+                                "up": "false"
+                            },
+                            {
+                                "north": "true"
+                            },
+                            {
+                                "south": "true"
+                            },
+                            {
+                                "west": "true"
+                            },
+                            {
+                                "east": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "OR": [
+                            {
+                                "down": "true"
+                            },
+                            {
+                                "up": "true"
+                            },
+                            {
+                                "north": "false"
+                            },
+                            {
+                                "south": "false"
+                            },
+                            {
+                                "west": "true"
+                            },
+                            {
+                                "east": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "OR": [
+                            {
+                                "down": "true"
+                            },
+                            {
+                                "up": "true"
+                            },
+                            {
+                                "north": "true"
+                            },
+                            {
+                                "south": "true"
+                            },
+                            {
+                                "west": "false"
+                            },
+                            {
+                                "east": "false"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_core"
+            }
+        },
+        {
+            "when": {
+                "down": "true"
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_down"
+            }
+        },
+        {
+            "when": {
+                "up": "true"
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_up"
+            }
+        },
+        {
+            "when": {
+                "north": "true"
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_north"
+            }
+        },
+        {
+            "when": {
+                "south": "true"
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_south"
+            }
+        },
+        {
+            "when": {
+                "west": "true"
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_west"
+            }
+        },
+        {
+            "when": {
+                "east": "true"
+            },
+            "apply": {
+                "model": "thaumicadditions:block/vis_conduit_east"
+            }
+        }
+    ]
+}

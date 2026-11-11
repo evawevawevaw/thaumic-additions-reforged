@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:alchemy",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:thaumium_ingot"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.thaumium"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.thaumium.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

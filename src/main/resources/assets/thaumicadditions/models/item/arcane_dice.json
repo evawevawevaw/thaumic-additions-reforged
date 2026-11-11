@@ -1,0 +1,23 @@
+{
+    "parent": "thaumicadditions:item/arcane_dice_0",
+    "overrides": [
+        {
+            "predicate": {
+                "thaumicadditions:rolling": 0.33333334
+            },
+            "model": "thaumicadditions:item/arcane_dice_1"
+        },
+        {
+            "predicate": {
+                "thaumicadditions:rolling": 0.6666667
+            },
+            "model": "thaumicadditions:item/arcane_dice_2"
+        },
+        {
+            "predicate": {
+                "thaumicadditions:rolling": 1.0
+            },
+            "model": "thaumicadditions:item/arcane_dice_3"
+        }
+    ]
+}

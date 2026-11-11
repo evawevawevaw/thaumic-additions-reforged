@@ -1,0 +1,14 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "thaumicadditions:item/seals_base"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "thaumicadditions:filled": 1
+            },
+            "model": "thaumicadditions:item/seal_symbol_filled"
+        }
+    ]
+}

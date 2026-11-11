@@ -1,0 +1,27 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "thaumicadditions:item/seal_base",
+        "layer1": "thaumicadditions:item/seal_over"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "thaumicadditions:symbols": 1
+            },
+            "model": "thaumicadditions:item/seal_item_1"
+        },
+        {
+            "predicate": {
+                "thaumicadditions:symbols": 2
+            },
+            "model": "thaumicadditions:item/seal_item_2"
+        },
+        {
+            "predicate": {
+                "thaumicadditions:symbols": 3
+            },
+            "model": "thaumicadditions:item/seal_item_3"
+        }
+    ]
+}

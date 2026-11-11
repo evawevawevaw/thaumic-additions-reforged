@@ -1,0 +1,183 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+    id 'idea'
+}
+
+tasks.named('wrapper', Wrapper).configure {
+    distributionType = Wrapper.DistributionType.BIN
+}
+
+version = mod_version
+group = mod_group_id
+
+repositories {
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/releases/"
+        content {
+            includeGroup "dev.emi"
+        }
+    }
+    maven {
+        name = "Minecraft Forge"
+        url = "https://maven.minecraftforge.net/"
+        content {
+            includeGroup "com.github.glitchfiend"
+        }
+    }
+    maven {
+        name = "Illusive Soulworks maven"
+        url = "https://maven.theillusivec4.top/"
+        content {
+            includeGroup "top.theillusivec4.curios"
+        }
+    }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+        content {
+            includeGroup "mezz.jei"
+            includeGroup "net.mezzdev.config"
+        }
+    }
+    maven {
+        name = "Shedaniel's maven"
+        url = "https://maven.shedaniel.me/"
+        content {
+            includeGroup "me.shedaniel"
+            includeGroup "me.shedaniel.cloth"
+            includeGroup "dev.architectury"
+        }
+    }
+}
+
+base {
+    archivesName = "thaumic-additions"
+}
+
+tasks.named('jar', Jar) {
+    archiveFileName = "thaumic-additions-${mod_version}-${minecraft_version}.jar"
+    from(['LICENSE', 'THIRD_PARTY_NOTICES.md']) {
+        into 'META-INF'
+    }
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(Integer.parseInt(java_version))
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        minecraftVersion = project.parchment_minecraft_version
+        mappingsVersion = project.parchment_mappings_version
+    }
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+            programArgument '--nogui'
+        }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.INFO
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+dependencies {
+    implementation files("libs/thaumcraft-4-reforged-${thaumcraft_version}-${minecraft_version}.jar")
+    implementation "com.github.glitchfiend:TerraBlender-neoforge:${terrablender_version}"
+    implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    compileOnly "me.shedaniel:RoughlyEnoughItems-api-neoforge:${rei_version}"
+    compileOnly "dev.emi:emi-neoforge:${emi_version}"
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_authors            : mod_authors,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            thaumcraft_version     : thaumcraft_version,
+            thaumcraft_version_range: thaumcraft_version_range,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+var generateModLogo = tasks.register('generateModLogo') {
+    def original = layout.projectDirectory.file('thaumic-additions-icon.jpeg')
+    def generated = layout.buildDirectory.dir('generated/resources/modLogo')
+    inputs.file(original)
+    outputs.dir(generated)
+    doLast {
+        def image = javax.imageio.ImageIO.read(original.asFile)
+        if (image == null) {
+            throw new GradleException('Cannot decode thaumic-additions-icon.jpeg')
+        }
+        def output = new File(generated.get().asFile, 'assets/thaumicadditions/icon.png')
+        output.parentFile.mkdirs()
+        if (!javax.imageio.ImageIO.write(image, 'png', output)) {
+            throw new GradleException('PNG image writer is unavailable')
+        }
+    }
+}
+
+sourceSets.main.resources.srcDir generateModLogo
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xlint:deprecation']
+}
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+tasks.named('runServer') {
+    standardInput = System.in
+}
+
+sourceSets {
+    verification {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath = output + compileClasspath
+    }
+}
+
+def verifyTransport = tasks.register('verifyTransport', JavaExec) {
+    dependsOn tasks.named('verificationClasses')
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'thaumicadditions.verification.TransportChecks'
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(Integer.parseInt(java_version))
+    }
+}
+
+tasks.named('check') {
+    dependsOn verifyTransport
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:block/block",
+    "loader": "neoforge:obj",
+    "model": "thaumicadditions:models/block/infuser_activator.obj",
+    "automatic_culling": false,
+    "shade_quads": false,
+    "flip_v": false,
+    "textures": {
+        "particle": "thaumicadditions:model/infuser_activator"
+    }
+}

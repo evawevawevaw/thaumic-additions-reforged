@@ -1,0 +1,20 @@
+{
+    "parent": "thaumicadditions:basicwand",
+    "display": {
+        "icon": {
+            "id": "thaumcraft:crucible"
+        },
+        "title": {
+            "translate": "advancement.thaumicadditions.alchemy"
+        },
+        "description": {
+            "translate": "advancement.thaumicadditions.alchemy.desc"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
